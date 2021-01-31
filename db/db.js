@@ -16,15 +16,9 @@ const db = new Sequelize(
   // process.env.DB_USER,
   // process.env.DB_PASS,
   {
-    host: "localhost",
     dialect: "postgres",
     protocol: "postgres",
-    dialectOptions: {
-      ssl: {
-        sslmode: "require",
-        rejectUnauthorized: false,
-      },
-    },
+
     pool: {
       max: 5,
       min: 0,
