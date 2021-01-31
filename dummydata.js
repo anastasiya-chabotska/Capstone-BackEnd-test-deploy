@@ -1,17 +1,17 @@
 //some dummy data to seed the places table
 const seedPlaces = [
-  {
-    name: "FAUSTO MELOTTI: CERAMICS",
-    description:
-      "Barbara Mathes Gallery is pleased to present Fausto Melotti: Ceramics, a selection of Melotti’s remarkable ceramics from the postwar period. Fausto Melotti (1901-1986) was a central figure in 20th century Italian art who first rose to prominence in the years prior to the Second World War. His unique artistic style synthesized... Dates: Jan 21-May 8, 2021",
-    address: "Barbara Mathes Gallery 22 E. 80th Street New York, NY USA",
-    category: "art",
-    borough: "manhattan",
-    imageUrl:
-      "http://www.artnet.com/WebServices/images/ll2ae646d9-8d9b-4a16-baf9-49c56304236cllgQTfDrDWQFHNEAG/fausto-melotti-cartoccio,coppetta,coppetta-blu,senza-titolo,tema-e-variazioni-xi,vaso.jpg",
-    numOfLikes: 0,
-    comments: [],
-  },
+  // {
+  //   name: "FAUSTO MELOTTI: CERAMICS",
+  //   description:
+  //     "Barbara Mathes Gallery is pleased to present Fausto Melotti: Ceramics, a selection of Melotti’s remarkable ceramics from the postwar period. Fausto Melotti (1901-1986) was a central figure in 20th century Italian art who first rose to prominence in the years prior to the Second World War. His unique artistic style synthesized... Dates: Jan 21-May 8, 2021",
+  //   address: "Barbara Mathes Gallery 22 E. 80th Street New York, NY USA",
+  //   category: "art",
+  //   borough: "manhattan",
+  //   imageUrl:
+  //     "http://www.artnet.com/WebServices/images/ll2ae646d9-8d9b-4a16-baf9-49c56304236cllgQTfDrDWQFHNEAG/fausto-melotti-cartoccio,coppetta,coppetta-blu,senza-titolo,tema-e-variazioni-xi,vaso.jpg",
+  //   numOfLikes: 0,
+  //   comments: [],
+  // },
   {
     name: "SCREEN DRAWINGS",
     description:
