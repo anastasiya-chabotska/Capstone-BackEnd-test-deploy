@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize');
-require('dotenv').config()//required
+const { Sequelize } = require("sequelize");
+require("dotenv").config(); //required
 
 // Initialize database with Sequelize
 /* const db = new Sequelize(
@@ -11,18 +11,28 @@ require('dotenv').config()//required
  */
 
 const db = new Sequelize(
-  process.env.DB_NAME, 
-  process.env.DB_USER, 
-  process.env.DB_PASS, {
-    host: 'localhost',
-    dialect: 'postgres',
+  process.env.DATABASE_URL,
+  // process.env.DB_NAME,
+  // process.env.DB_USER,
+  // process.env.DB_PASS,
+  {
+    host: "localhost",
+    dialect: "postgres",
+    protocol: "postgres",
+    dialectOptions: {
+      ssl: {
+        sslmode: "require",
+        rejectUnauthorized: false,
+      },
+    },
     pool: {
       max: 5,
       min: 0,
       acquire: 30000,
-      idle: 10000
+      idle: 10000,
     },
-});
+  }
+);
 
 try {
   db.authenticate();
@@ -31,6 +41,4 @@ try {
   console.error(e);
 }
 
- 
 module.exports = db;
-
